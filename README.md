@@ -9,7 +9,7 @@ This project aims to estimate the height of persons in an image by utilizing a c
 3. [Methodology](#methodology)
 4. [Potential Errors](#potential_errors)
 6. [Results](#results)
-7. [Future Work](#future_work)
+7. [Future Works and Improvements](#future_work_and_improvements)
 8. [License](#license)
 
 ## Introduction
@@ -34,7 +34,6 @@ The height estimation process involves several steps:
     ```
     where 6.3 cm is the approximate distance between the centers of the two eyes for an average human.
 
-## Potential Errors
 ## Potential Errors and Limitations
 
 While the method aims to estimate human height accurately, there are certain scenarios that may affect the reliability of the results:
@@ -48,6 +47,21 @@ It's important to consider these factors when interpreting the height estimation
 
 ## Results
 The output of the script will display the estimated heights of the persons detected in the input image.
+
+## Future Works and Improvements
+
+In future iterations of this project, we plan to explore the following enhancements:
+
+1. **Improved Eye Detection**: Instead of relying on MTCNN for eye extraction, we aim to implement a depth-based model to predict the pixel distances between eyes directly from the image. This approach would be less dependent on the person's orientation relative to the camera.
+
+2. **Enhanced Robustness**: Implementing robust techniques to handle scenarios where persons are not facing the camera or are in dynamic poses (e.g., jumping or large movements). This could involve integrating more sophisticated person detection and tracking algorithms.
+
+3. **Depth Perception Integration**: Integrating depth perception techniques or depth sensors to accurately estimate the physical dimensions of persons in the image, thereby improving height calculations.
+
+4. **Machine Learning Refinement**: Continuously refining machine learning models used for eye detection and person recognition to enhance accuracy and adaptability across diverse real-world scenarios.
+
+These improvements aim to make the height estimation process more reliable and applicable in various practical settings.
+
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
