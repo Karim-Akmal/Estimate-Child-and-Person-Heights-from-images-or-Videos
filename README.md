@@ -6,11 +6,10 @@ This project aims to estimate the height of persons in an image by utilizing a c
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Prerequisites](#prerequisites)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Methodology](#methodology)
+3. [Methodology](#methodology)
+4. [Potential Errors](#potential_errors)
 6. [Results](#results)
-7. [Contributing](#contributing)
+7. [Future Work](#future_work)
 8. [License](#license)
 
 ## Introduction
@@ -34,6 +33,18 @@ The height estimation process involves several steps:
     Height = (6.3 * Height of Bounding Box in Pixels) / Distance between the Centers of the Two Eyes in Pixels
     ```
     where 6.3 cm is the approximate distance between the centers of the two eyes for an average human.
+
+## Potential Errors
+## Potential Errors and Limitations
+
+While the method aims to estimate human height accurately, there are certain scenarios that may affect the reliability of the results:
+
+1. **Person Facing Away**: If a person has their back to the camera, the MTCNN model may not detect their eyes, thus preventing height calculation for that individual.
+
+2. **Large Movement**: If a person is jumping, or taking large strides while walking, their bounding box may be larger than normal. This can lead to an overestimation of their height due to the increased pixel dimensions of the bounding box.
+
+It's important to consider these factors when interpreting the height estimation results from this system.
+
 
 ## Results
 The output of the script will display the estimated heights of the persons detected in the input image.
