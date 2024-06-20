@@ -1,7 +1,7 @@
 # Estimate-Child-and-Person-Heights-from-images-or-Videos
 
 
-This project aims to estimate the height of persons in an image by utilizing a combination of computer vision techniques including MCMT (Multi-Class Multi-Task) for eye detection and YOLO (You Only Look Once) for person detection. 
+This project aims to estimate the height of persons in an image by utilizing a combination of computer vision techniques including MTCNN (Multi-task Cascaded Convolutional Neural Network) for eye detection and YOLO (You Only Look Once) for person detection. 
 
 ## Table of Contents
 1. [Introduction](#introduction)
